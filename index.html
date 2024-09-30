@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="دراسة على يد أمهر المدرسين">
+    <title>موقع الدراسة</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ربط ملف CSS -->
+    
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        a { color: #2f0cf8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight { text-align: center; }
+        .teacher { margin-bottom: 20px; }
+        footer { text-align: center; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="highlight">دراسة على يد أمهر المدرسين</h1>
+        <nav>
+            <a href="#teachers">المدرسون</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <h2>للبحث عن كتب تعليمية</h2>
+            <input type="text" id="search" placeholder="ابحث عن كتب" style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            <button onclick="searchWeb()">بحث</button>
+        </section>
+
+        <section id="teachers">
+            <h2>المدرسون</h2>
+            <h1>قسم الرياضيات</h1>
+            <div class="teacher">
+                <h3>الأستاذ عبد السلام محمد</h3>
+                <p>مدرس رياضيات ذو خبرة <span class="number">6</span> سنوات</p>
+                <a href="https://wa.me/+201229265536" target="_blank">تواصل عبر واتساب</a>
+            </div>
+            <h1>قسم العلوم</h1>
+            <div class="teacher">
+                <h3>الأستاذ مصطفى عبد النعيم</h3>
+                <p>مدرس علوم ذو خبرة <span class="number">9</span> سنوات</p>
+                <a href="https://wa.me/+201156196444" target="_blank">تواصل عبر واتساب</a>
+            </div>
+            <h1>قسم الدراسات</h1>
+            <div class="teacher">
+                <h3>الأستاذ محمد إبراهيم</h3>
+                <p>مدرس تاريخ وجغرافيا ذو خبرة <span class="number">10</span> سنوات.</p>
+                <a href="https://wa.me/+201279793412" target="_blank">تواصل عبر واتساب</a>
+            </div>
+            <h1>قسم اللغة الإنجليزية</h1>
+            <div class="teacher">
+                <h3>الأستاذ رفعت عبد الستار</h3>
+                <p>مدرس لغة إنجليزية ذو خبرة <span class="number">10</span> سنوات</p>
+                <a href="https://wa.me/+201224116676" target="_blank">تواصل عبر واتساب</a>
+            </div>
+            <h1>قسم اللغة العربية</h1>
+            <div class="teacher">
+                <h3>الأستاذة سماح السيد</h3>
+                <p>مدرسة لغة عربية ذو خبرة <span class="number">10</span> سنوات</p>
+                <a href="https://wa.me/+201285005722" target="_blank">تواصل عبر واتساب</a><br><br>
+                <a href="https://youtube.com/channel/UC2oTMe4ukM_VZd3tx95xyUg?si=Ip9-KT0fYbGbnhyH" target="_blank">فديوهات اليوتيوب</a>
+            </div>
+            <div class="teacher">
+                <h3>الأستاذ علي أحمد</h3>
+                <p>مدرس لغة عربية ذو خبرة <span class="number">25</span> سنة</p>
+                <a href="https://wa.me/+201285410322" target="_blank">تواصل عبر واتساب</a><br><br>
+                <a href="https://youtube.com/@alyahmed2604?si=RVdPgSTA74MztLPv" target="_blank">فديوهات اليوتيوب</a>
+            </div>
+            <h1>قسم الكيمياء</h1>
+            <div class="teacher">
+                <h3>الأستاذ عبد الصمد</h3>
+                <p>مدرس كيمياء ذو خبرة <span class="number">6</span> سنوات</p>
+                <a href="https://wa.me/+201288752833" target="_blank">تواصل عبر واتساب</a>
+            </div>
+            <h1>قسم الأحياء</h1>
+            <div class="teacher">
+                <h3>الأستاذ نادر طلب</h3>
+                <p>مدرس أحياء ذو خبرة <span class="number">7</span> سنوات</p>
+                <a href="https://wa.me/+201288165307" target="_blank">تواصل عبر واتساب</a><br><br>
+                <a href="https://youtube.com/@naderteleb?si=nxBHX-IGFTS-HNJt" target="_blank">فديوهات اليوتيوب</a>
+            </div>
+        </section>
+    </main>
+
+
+
+    <h1 style="text-align: center;">بالتوفيق للجميع</h1>
+    
+    <footer>
+        <p>جميع الحقوق محفوظة &copy;</p>
+        <a href="https://wa.me/+201226499832" target="_blank">للتواصل مع المطور</a>
+    </footer>
+
+    <script>
+        function searchWeb() {
+            const query = document.getElementById('search').value;
+            if (query) {
+                window.open('https://www.google.com/search?q=' + encodeURIComponent(query), '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
