@@ -7,6 +7,7 @@ body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: white;
+  direction: rtl;
 }
 
 
@@ -30,19 +31,18 @@ nav ul li {
 nav a {
   color: red; /* لون الروابط */
   text-decoration: none;
-  background-color: black; /* خلفية الروابط */
   padding: 5px 10px; /* إضافة حشوة حول النص */
   border-radius: 5px; /* زوايا مستديرة للخلفية */
   transition: background-color 0.3s, color 0.3s; /* تأثيرات الانتقال */
 }
 
 nav a:hover {
-  background-color: white; /* خلفية عند المرور */
+  text-decoration: none;
   color: black; /* لون النص عند المرور */
+
 }
 a:link {
   color: green;
-  background-color: black;
   text-decoration: none;
 }
 a:visited {
@@ -59,6 +59,39 @@ a:active {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;
+}
+.social a{
+  text-decoration: none;
+}
+.social img{
+  margin-right: 2rem;
+  width: 2.9rem;
+  transition: 0.4s;
+}
+.social img:hover{
+  transform: scale(1.2);
+}
+#searchn{
+  background-color: #1f1e1eb0;
+  color: white;
+  text-shadow: 1px 1px 5px darkblue;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 0 0 47%;
+  
+}
+#search{
+  
+  background-color: #1f1e1eb0;
+  color: white;
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
 
 
